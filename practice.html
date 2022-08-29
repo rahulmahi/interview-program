@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let arr = ["many","things","mahi","rahul","note","vel"];
+      let arr1 = [];
+      for(let i=0;i<arr.length;i++)
+      {
+          var c =arr[i];
+          var x =[];
+          for(let j=0;j<c.length;j++)
+          {
+              if(c[j] =='a'||c[j] =='e'||c[j] =='o'||c[j] =='i'||c[j] =='u')
+              {
+                  x.push(c[j]);
+              }
+          }
+          if(x.length == 2){
+             arr1.push(c)
+          }
+      }
+      console.log(arr1);
+
+      let n = 200;
+      let val = [];
+      let val1 = [];
+      for (let i = 0; i < n; i++) {
+        if (i % 8 == 0) {
+          var c = i;
+          var d = i % 10;
+          c = Math.floor(c / 10);
+          //    console.log(c);
+          //    console.log(d);
+
+          if (c > d) {
+            val.push(i);
+          } else {
+            val1.push(i);
+          }
+        }
+      }
+      console.log(val);
+      console.log(val1);
+
+    let arr2 = [1,2,3,4,5,6,4];
+    let arr3 = [4,5,6,7,8,8,5];
+      
+     var con = arr2.concat(arr3);
+
+    // console.log(con);
+
+    var x = con.sort( (x,y) =>{
+       return x-y
+    });
+    console.log(x);
+
+    console.log(x);
+
+    </script>
+    <!-- <script src="daily-task.js"></script> -->
+  </body>
+</html>
